@@ -1,14 +1,66 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/jeremy/CODE/Ruby/socrates/flashcardinator/player.rb": [
+      "/Users/jeremy/CODE/Ruby/socrates/flashcardinator/deck.rb": [
         1,
         1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        8,
+        8,
+        8,
+        null,
+        null,
+        null,
+        1,
+        8,
+        229,
+        229,
+        null,
+        1,
+        null,
+        null,
+        228,
+        228,
+        null,
+        null,
+        6,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/jeremy/CODE/Ruby/socrates/flashcardinator/card.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        229,
+        229,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1351034378
+    "timestamp": 1351042042
   }
 }

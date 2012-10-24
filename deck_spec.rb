@@ -54,11 +54,11 @@ module Flashcardinator
         before do
           File.rename("./flashcards_data.txt", "./orig-flashcards_data.txt")
           broken_data_file = File.new("./flashcards_data.txt", "w+")
-          broken_data_file.puts "A term longer than \ta definition."
+          IO.write("./flashcards_data.txt", "A term longer than \ta definition.")
         end
         describe '#deserialized_flashcards_data_dot_txt!' do
           it 'raises an error message indicating incorrect data in the file' do 
-            thedeck.card_terms_by_created_at.first.should raise_error
+            thedeck.deserialize_flashcards_data_dot_txt!.should raise_error("bad data file")
           end
         end
         after do

@@ -15,8 +15,14 @@ require './card.rb'
     def deserialize_flashcards_data_dot_txt!
       File.readlines('flashcards_data.txt').each do |line|
         a_card = Card.new( *line.split("\t") )
-        @cards[a_card.term] = a_card.definition
-        @card_terms_by_created_at << a_card.term
+        if a_card.term.length > a_card.definition.length
+          begin
+            raise "bad data file"
+          end
+        else
+          @cards[a_card.term] = a_card.definition
+          @card_terms_by_created_at << a_card.term
+        end
       end
       return @cards
     end
